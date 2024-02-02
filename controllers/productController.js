@@ -164,7 +164,6 @@ const fetchAllProducts = asyncHandler(async (req, res) => {
       .sort({ createAt: -1 });
 
     res.json(products);
-    console.log(product.image)
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Server Error" });
